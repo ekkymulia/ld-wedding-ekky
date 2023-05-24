@@ -1,0 +1,200 @@
+.allow-scroll{
+    overflow: scroll;
+}
+
+.fade-out {
+    animation: fadeRight 1.5s ease-in-out forwards;
+}
+
+.show-content{
+    animation: fadeLeft 3s ease-in-out forwards;
+}
+
+@keyframes fadeRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+@keyframes fadeLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#opening{
+    z-index: 10 !important;
+}
+
+
+#content-section{
+    opacity: 0;
+    display: none;
+}
+
+
+#groom_name{ 
+    font-size:5rem !important; 
+}
+
+h2{
+    font-size: 1rem !important;
+}
+
+h3{
+    font-size: 0.8rem !important;
+}
+
+h4{
+    font-size: 0.8rem !important;
+}
+
+#wedding_date{
+    font-weight: 700;
+}
+
+.nav-link{
+    letter-spacing: 1px;
+}
+
+#logo{
+    padding-left: 8rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar{
+    z-index: 10;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    background: transparentize(#FFFFFF, 0.25);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#button-open-invitation{
+    margin-right: 5rem;
+    border-color: #343a40;
+    color: white;
+}
+
+#button-open-invitation:hover{
+    background-color: white;
+    color: black;
+}
+
+#invitation-dest{
+    padding-left: 8rem;
+}
+
+#card-open-container{
+    margin: 0;
+    padding: 1rem;
+    border-top-right-radius: 4rem;
+    background-color: black;
+    position: sticky;
+    bottom: 0;
+}
+
+#groom_image{
+    float: right;
+    width: 100%;
+    height: auto;
+    padding-left: 0.75rem;
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+@media (min-width: 1361px) {
+    #logo{
+        padding-left: 8rem;
+    }
+
+    #groom_name{ 
+        font-size:6rem; 
+    }
+
+    #invitation-dest{
+        padding-left: 1rem;
+    }
+    
+    #card-open-container{
+        padding-left: 8rem;
+    }
+
+    #groom_image{
+        height: 110%;
+    }
+
+}
+
+@media (min-width: 1768px) {
+
+    #vertical-text-container{
+        bottom: 0;
+        padding-bottom: 20vh !important; 
+        white-space: nowrap;
+    }
+
+}
+
+
+#wedding_invitation{
+    font-weight: 500;
+    word-spacing: 2px;
+    letter-spacing: 7px;
+}
+
+#vertical-text-container{
+    padding-right: 5rem;
+    writing-mode:vertical-lr;
+    transform:rotate(180deg)
+}
+
+@media (max-width: 1024px) {
+
+    body{
+        overflow: scroll;
+    }
+
+    #vertical-text-container{
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        position: relative;
+    }
+
+    #groom_name{
+        font-size: 4.5rem;
+    }
+
+    #logo{
+        padding-left: 0;
+    }
+
+    #invitation-dest{
+        padding-left: 0;
+    }
+    
+    #button-open-invitation{
+        margin-right: 1rem;
+    }
+
+    #card-open-container{
+        position: absolute;
+        bottom: 0;
+    }
+
+
+}
