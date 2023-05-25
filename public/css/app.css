@@ -1,5 +1,13 @@
-.allow-scroll {
-    overflow: scroll;
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Advent Pro', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }  
+
+  .allow-scroll {
+    overflow-y: scroll;
   }
   
   .fade-out {
@@ -157,8 +165,10 @@
   }
   
   @media (max-width: 1024px) {
+    
     body {
-      overflow: scroll;
+      overflow-x: hidden !important;
+      overflow-y: scroll;
     }
   
     #vertical-text-container {

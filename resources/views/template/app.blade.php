@@ -19,15 +19,6 @@
 
         <!-- aos -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-                font-family: 'Advent Pro', sans-serif;
-                overflow: hidden;
-            }
-        </style>
     </head>
     <body>
         @yield('content')

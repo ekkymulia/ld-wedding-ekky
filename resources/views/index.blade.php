@@ -25,7 +25,7 @@
         <div class="container-xxl min-h-screen">
             <div class="d-flex flex-column flex-lg-row">
                 <div class="col-sm-12 col-lg-3 min-h-screen position-relative">
-                    <div id="vertical-text-container" class="ps-md-5 ms-md-5 position-md-absolute top-md-25 ps-2 my-5 pb-5">
+                    <div id="vertical-text-container" class="ps-md-5 ms-md-5 position-md-absolute top-md-25 ps-2 my-5 pb-2 pb-md-5">
                         <span id="wedding_date" class="m-0 p-0 d-flex items-justify-center fs-xl-6" style="transform: translate(0, 10px)">{{ strtoupper(__("wedding-date")) }}</span>
                         <h2 id="wedding_invitation" class="m-0 p-0 d-flex items-justify-center fs-lg-6 fs-xl-5 lh-1" style="transform: translate(0, 10px)">{{ strtoupper(__("wedding-invitation")) }}</h2>
                         <h1 id="groom_name" class="m-0 p-0 d-flex items-justify-center lh-1" style="transform: translate(0, 10px)">Levi & Dio</h1>
@@ -75,6 +75,7 @@
                     $("#card-open-container").removeClass('show-content');
                     $("#card-open-container").addClass('fade-out');
                 }, 750);
+                $("#opener").remove();
                 setTimeout(function() {
                     $("#content-section").addClass("show-content")
                     $("#content-section").show();
